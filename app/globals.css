@@ -128,23 +128,8 @@ a {
   text-shadow: 1.rem;
 }
 
-.form-group {
-  border: 2px solid;
-  margin: 10px;
-  border-radius: 15px;
-  margin-top: 20px;
-}
+.banner {
+  background-image: url('/emoji-bg-webp');
+  background-repeat: repeat-x;
 
-.form-group>label {
-  position: absolute;
-  top: 6px;
-  left: 20px;
-  padding: 5px 10px;
-  border-radius: 15px;
-  background: #fff;
-}
-
-.form-group>select {
-  border: none;
-  background: transparent;
 }

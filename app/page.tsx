@@ -18,7 +18,13 @@ return (
 <div className="main-section">
   <div className='container-fluid'>
     {/* HERO */}
-
+    <div className='col-12'>
+      <div className='bg-white rounded-4 shadow-sm'>
+        <div className=''>
+          
+        </div>
+      </div>
+    </div>
     {/* END HERO */}
     <div className='row justify-content-between mt-5'>
 
@@ -71,7 +77,7 @@ return (
             <div className='form-group border rounded'>
 
               <label htmlFor='select01' className='border border-top d-flex align-items-center mb-0'>Show</label>
-              <select id='select01' className='form-control  border-white'>
+              <select id='select01' className='form-select  border-white'>
                 <option>Everything</option>
                 <option>Newest Posts</option>
                 <option>Oldest posts</option>
