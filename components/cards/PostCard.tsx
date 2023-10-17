@@ -55,10 +55,10 @@ return (
                     <span className='text-secondary'>2 years ago</span>
             </div>
         </div>
-        <div className='col-12 p-4'>
-            <Link href='/' className='post-link'>https://www.twitch.tv/blizzard</Link>
+        <div className='col-12'>
+            <Link href='/' className='post-link p-4'>https://www.twitch.tv/blizzard</Link>
             <div className='mt-5 col-12'>    
-                <Image src='/1-teaser.jpg' width={632} height={500} alt='Image post' />    
+                <img className='img-fluid m-0 p-0' src='/1-teaser.jpg' alt='Post picture' />  
             </div>
         </div>
 
