@@ -45,7 +45,7 @@ export const popularGroup = [
     },
     {
         imgURL: "/head-01.jpg",
-        memberName: "Gaming Watchower",
+        memberName: "Gaming Watchtower",
         memberCount: "3 members",
     },
     {

@@ -13,7 +13,7 @@ return (
                 <p className='gap-5'>
                     <span className='fw-semibold'>Marina Valentine</span>
                     <i className="ms-1 me-2 text-primary bi bi-check-circle-fill"></i>
-                    <span className='badge text-bg-primary rounded-pill me-2'>Pro Member</span>
+                    <span className='badge badge-pro rounded-pill me-2'>Pro Member</span>
                     <span className='text-secondary'>replied to the topic</span>
                     <span className='fw-semibold'> Welcome to the Cosplayers Group Forum!</span>
                     <span>in the forum</span>
@@ -49,15 +49,17 @@ return (
                 <p className='gap-5'>
                         <span className='fw-semibold'>Marina Valentine</span>
                         <i className="ms-1 me-2 text-primary bi bi-check-circle-fill"></i>
-                        <span className='badge text-bg-primary rounded-pill me-2'>Pro Member</span>
+                        <span className='badge badge-pro rounded-pill me-2'>Pro Member</span>
                         <span className='text-secondary'>posted an update</span>
                     </p>
                     <span className='text-secondary'>2 years ago</span>
             </div>
         </div>
         <div className='col-12 p-4'>
-            <Link href='/'>https://www.twitch.tv/blizzard</Link>
-            <Image src='/1-teaser.jpg' style={width}/>
+            <Link href='/' className='post-link'>https://www.twitch.tv/blizzard</Link>
+            <div className='mt-5 col-12'>    
+                <Image src='/1-teaser.jpg' width={632} height={500} alt='Image post' />    
+            </div>
         </div>
 
         <hr className='m-2 border border-1 opacity-50' />
@@ -78,4 +80,4 @@ return (
 )
 }
 
-export default PostCard
+export default PostCard;

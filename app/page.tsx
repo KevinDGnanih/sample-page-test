@@ -96,13 +96,13 @@ return (
             <p className='fw-bolder m-4'>Popular Groups</p>
             {popularGroup.map((link) => (
             <>
-              <div className='d-flex p-4'>
-                <Image src={link.imgURL} width={45} height={45} alt='profile picture' className='me-2' />
-                <div>
+              <div className='d-flex p-4 align-items-center'>
+                <Image src={link.imgURL} width={55} height={55} alt='profile picture' className='me-2' />
+                <div className='col'>
                   <p className='fw-semibold p-0 m-0'>{link.memberName}</p>
                   <Link className='link-react text-body-secondary link-underline' href="#">{link.memberCount}</Link>
                 </div>
-                <span className='ms-3'><i className="bi bi-globe-americas"></i></span>
+                <span className='ms-3'><i className="text-grey fs-5 bi bi-globe-americas"></i></span>
               </div>
             </>
             ))}

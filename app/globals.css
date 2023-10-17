@@ -106,3 +106,15 @@ a {
 .link-react {
   text-decoration: none;
 }
+
+.post-link {
+  color: rgb(48, 210, 224);
+}
+
+.text-grey {
+  color: rgb(203, 203, 203);
+}
+
+.badge-pro {
+  background-color: rgb(93, 93, 245);
+}
