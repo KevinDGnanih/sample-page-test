@@ -118,3 +118,33 @@ a {
 .badge-pro {
   background-color: rgb(93, 93, 245);
 }
+
+.at-profile {
+  font-size: small;
+}
+
+.hover-side:hover i {
+  color: rgb(93, 93, 245);
+  text-shadow: 1.rem;
+}
+
+.form-group {
+  border: 2px solid;
+  margin: 10px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+.form-group>label {
+  position: absolute;
+  top: 6px;
+  left: 20px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background: #fff;
+}
+
+.form-group>select {
+  border: none;
+  background: transparent;
+}

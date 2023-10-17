@@ -9,7 +9,7 @@ const Sidebar = () => {
         <li className='nav-item'>
           <Link 
             href="#"
-            className='nav-link active p-3 m-1 shadow rounded-4'
+            className='nav-link hover-side active p-3 m-1 shadow rounded-4'
             aria-current="page"
             data-bs-toggle="tooltip"
             title=''
@@ -23,27 +23,27 @@ const Sidebar = () => {
         <li className='nav-item'>
           <Link 
             href="#"
-            className='nav-link py-3 rounded-0'
+            className='nav-link py-3 m-1 rounded-0'
             aria-current="page"
             data-bs-toggle="tooltip"
             data-bs-placement="right"
             aria-label='Home'
             data-bs-original-title='Home'
             >
-              <i className="bi bi-person fs-4 text-body-tertiary"></i>
+              <i className="hover-side bi bi-person fs-4 text-body-tertiary"></i>
           </Link>
         </li>
         <li className='nav-item'>
           <Link 
             href="#"
-            className='nav-link py-3 rounded-0'
+            className='nav-link py-3 hover-side  rounded-0'
             aria-current="page"
             data-bs-toggle="tooltip"
             data-bs-placement="right"
             aria-label='Home'
             data-bs-original-title='Home'
             >
-              <i className="bi bi-people-fill fs-4 text-body-tertiary"></i>
+              <i className="bi bi-people-fill hover-side fs-4 text-body-tertiary"></i>
           </Link>
         </li>
         <li className='nav-item'>

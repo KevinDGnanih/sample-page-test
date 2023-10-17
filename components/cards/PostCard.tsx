@@ -16,7 +16,7 @@ return (
                     <span className='badge badge-pro rounded-pill me-2'>Pro Member</span>
                     <span className='text-secondary'>replied to the topic</span>
                     <span className='fw-semibold'> Welcome to the Cosplayers Group Forum!</span>
-                    <span>in the forum</span>
+                    <span> in the forum</span>
                     <span className='fw-semibold'> Cosplayers Group Forum</span>
                 </p>
                 <span className='text-secondary'>1 year ago</span>
@@ -30,12 +30,12 @@ return (
 
         <div className='d-flex justify-content-between align-items-center p-2'>
             <div className='ms-2  mb-2 p-2'>
-                <i className="fs-4 bi bi-emoji-smile-fill"></i>
+                <Image src='/tongue.svg' width={30} height={30} alt='Emoji Tongue' />
                 <span className='ms-2 fs-semibold'>1</span>
             </div>
             <div className='d-flex gap-4'>
-                <p><span>0 </span>Comments</p>
-                <p><span>0 </span>Shares</p>
+                <p className='fw-semibold'><span>0 </span>Comments</p>
+                <p className='fw-semibold'><span>0 </span>Shares</p>
             </div>
         </div>
     </div>
@@ -66,12 +66,12 @@ return (
 
         <div className='d-flex justify-content-between align-items-center p-2'>
             <div className='ms-2  mb-2 p-2'>
-                <i className="fs-4 bi bi-emoji-smile-fill"></i>
+                <Image src='/heart.svg' width={30} height={30} alt='Heart emoji' />
                 <span className='ms-2 fs-semibold'>1</span>
             </div>
             <div className='d-flex gap-4'>
-                <p><span>0 </span>Comments</p>
-                <p><span>0 </span>Shares</p>
+                <p className='fw-semibold'><span>0 </span>Comments</p>
+                <p className='fw-semibold'><span>0 </span>Shares</p>
             </div>
         </div>
     </div>

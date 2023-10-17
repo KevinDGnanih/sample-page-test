@@ -18,6 +18,7 @@ return (
 <div className="main-section">
   <div className='container-fluid'>
     {/* HERO */}
+
     {/* END HERO */}
     <div className='row justify-content-between mt-5'>
 
@@ -33,7 +34,7 @@ return (
                 <Image src={link.imgURL} width={45} height={45} alt='profile picture' className='me-2' />
                 <div>
                   <p className='fw-semibold p-0 m-0'>{link.usdName}</p>
-                  <Link className='link-react text-body-secondary link-underline' href="#">{link.profilLink}</Link>
+                  <Link className='link-react text-body-secondary link-underline at-profile' href="#">{link.profilLink}</Link>
                 </div>
               </div>
             </>
@@ -69,8 +70,9 @@ return (
             <p className='border-title fw-bolder'>All Updates</p>
             <div className='form-group border rounded'>
 
-              <label htmlFor='select01' className='form-label'>Show</label>
-              <select id='select01' className='form-select'>
+              <label htmlFor='select01' className='border border-top d-flex align-items-center mb-0'>Show</label>
+              <select id='select01' className='form-control  border-white'>
+                <option>Everything</option>
                 <option>Newest Posts</option>
                 <option>Oldest posts</option>
               </select>
@@ -100,7 +102,7 @@ return (
                 <Image src={link.imgURL} width={55} height={55} alt='profile picture' className='me-2' />
                 <div className='col'>
                   <p className='fw-semibold p-0 m-0'>{link.memberName}</p>
-                  <Link className='link-react text-body-secondary link-underline' href="#">{link.memberCount}</Link>
+                  <Link className='link-react at-profile text-body-secondary link-underline at-profile' href="#">{link.memberCount}</Link>
                 </div>
                 <span className='ms-3'><i className="text-grey fs-5 bi bi-globe-americas"></i></span>
               </div>
