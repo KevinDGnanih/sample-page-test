@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { memberList, popularGroup } from "@/constant";
 import { useState } from 'react';
 import PostCard from '@/components/cards/PostCard';
+import { currentUser } from "@clerk/nextjs";
 
 
 const options = [

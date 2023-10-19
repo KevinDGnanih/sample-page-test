@@ -1,3 +1,4 @@
+import { OrganizationSwitcher, SignOutButton, SignedIn } from '@clerk/nextjs'
 import Link from 'next/link'
 import React from 'react'
 
@@ -80,8 +81,20 @@ const Navbar = () => {
                 <span className='input-group-text border-0'><i className='bi bi-search border-0'></i></span>
             </form>
             <div className='d-flex col-lg-3 justify-content-lg-end'>
-                <button className='btn btn-lg btn-1 text-white fs-6'>Login</button>
+                <SignedIn>
+                    <button className='btn btn-lg btn-1 text-white fs-6'>Login</button>
+                    <SignOutButton>
+                        <button className='btn btn-lg btn-1 text-white fs-6'>Logout</button>
+                    </SignOutButton>
+                </SignedIn>
             </div>
+            <OrganizationSwitcher 
+                appearance={{
+                    elements: {
+                        organizationSwitcherTrigger: "pt-2 pb-4"
+                    }
+                }}
+            />
         </div>
       </div>
     </nav>
