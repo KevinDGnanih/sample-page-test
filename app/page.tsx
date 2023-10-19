@@ -54,7 +54,7 @@ return (
           <div className='p-2'>
             <p className='fw-bolder m-4'>QUESTS</p>
             <div className='d-flex p-4'>
-              <Image src="/head-01.jpg" width={45} height={45} alt='Quest badge' />
+              <Image src="/hex-mark.png" width={45} height={45} alt='Quest badge' />
               <div>
                 <p className='fw-bolder p-2'>Posting Machine</p>
                 <span className=' text-body-secondary'>Posted more than 20 profile activities in one day</span>
@@ -123,7 +123,7 @@ return (
           <div className='p-2'>
             <p className='fw-bolder m-4'>Badges</p>
             <div className='d-flex p-4'>
-              <Image className='me-1' src="/head-01.jpg" width={45} height={45} alt='Bagde picture' />
+              <Image className='me-1' src="/globe.png" width={45} height={45} alt='Bagde picture' />
               <div>
                 <p className='fw-semibold p-2'>Globe Trotter</p>
                 <span className='text-body-secondary'>Has joined at least 10 different groups</span>

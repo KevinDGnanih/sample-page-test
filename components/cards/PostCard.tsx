@@ -8,7 +8,7 @@ return (
     {/* Post 01 */}
     <div className='mb-4 rounded-4 shadow-sm bg-white'>
         <div className='d-flex col-12 p-4'>
-            <Image src="/head-01.jpg" width={45} height={45} alt='Profile picture' />
+            <Image className='' src="/hex-avatar-01.png" width={45} height={45} alt='Profile picture' />
             <div className='d-flex ms-2 row lh-1 align-items-center'>
                 <p className='gap-5'>
                     <span className='fw-semibold'>Marina Valentine</span>
@@ -44,7 +44,7 @@ return (
     {/* POST 02 */}
     <div className='mb-4 rounded-4 shadow-sm bg-white'>
         <div className='d-flex col-12 p-4'>
-            <Image src="/head-01.jpg" width={45} height={45} alt='Profile picture' />
+            <Image src="/hex-avatar-01.png" width={45} height={45} alt='Profile picture' />
             <div className='d-flex ms-2 row lh-1 align-items-center'>
                 <p className='gap-5'>
                         <span className='fw-semibold'>Marina Valentine</span>
