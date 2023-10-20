@@ -103,7 +103,7 @@ return (
       {/* RIGHT SIDE COLLUMN */}
       <div className='col-lg-3 col-md-6 '>
         {/* POPULAR GROUPS */}
-        <div className='mb-4 rounded-4 shadow-sm bg-white'>
+        <div className='mb-4 fade-in rounded-4 shadow-sm bg-white'>
           <div className='p-2'>
             <p className='fw-bolder m-4'>Popular Groups</p>
             {popularGroup.map((link) => (
@@ -141,13 +141,6 @@ return (
         {/* END BADGES */}
       </div>
       {/* END RIGHT SIDE COLLUMN */}
-      <div className='toast-container position-fixed bottom-0 end-0 p-3'>
-        <div id='liveToast' className='toast' role="alert" aria-live="assertive" aria-atomic="true">
-          <div className='toast-body'>
-            <p><span>Blizzard</span> is offline.</p>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </div>
