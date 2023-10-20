@@ -3,6 +3,11 @@ import Link from 'next/link'
 import React from 'react'
 
 const Navbar = () => {
+
+    const signOut = () => {
+        // Sign out the user
+    }
+
   return (
     <nav className='navbar navbar-expand-lg main-purple' aria-label='Navbar'>
       <div className='container-fluid'>
@@ -83,9 +88,9 @@ const Navbar = () => {
             <div className='d-flex col-lg-3 justify-content-lg-end'>
                 {/*<button className='btn btn-lg btn-1 text-white fs-6'>Login</button>*/}
                 <SignedIn>
-                    <Link href="/">
+                    <SignOutButton>
                         <button className='btn btn-lg btn-1 text-white fs-6'>Logout</button>
-                    </Link>
+                    </SignOutButton>
                 </SignedIn>
                 <SignedOut>
                     <Link href="/sign-in">
