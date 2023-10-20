@@ -3,7 +3,7 @@ import React from 'react'
 
 const Sidebar = () => {
   return (
-    <div id='sidebar' className='d-flex ms-1 pt-3 flex-column flex-shrink-0 bg-white sticky-aticky-top shadow-sm'>
+    <div id='sidebar' className='d-flex ms-1 pt-3 flex-column flex-shrink-0 bg-white sticky-aticky-top'>
       <div className=''></div>
       <ul className='nav nav-pills nav-flush flex-column mb-auto text-center'>
         <li className='nav-item'>

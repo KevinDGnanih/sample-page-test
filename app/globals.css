@@ -88,7 +88,7 @@ a {
 
 .active:hover {
   background-color: rgb(93, 93, 245) !important;
-  color: white;
+  color: white !important;
 }
 
 .main-section {

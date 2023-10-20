@@ -13,7 +13,9 @@ const options = [
 { value: "Oldest posts", label: "Oldest Posts" },
 ];
 
+
 export default function Home() {
+
 return (
 
 <div className="main-section">
@@ -22,7 +24,7 @@ return (
     <div className='col-12'>
       <div className='bg-white rounded-4 shadow-sm'>
         <div className=''>
-          
+
         </div>
       </div>
     </div>
@@ -41,7 +43,8 @@ return (
                 <Image src={link.imgURL} width={45} height={45} alt='profile picture' className='me-2' />
                 <div>
                   <p className='fw-semibold p-0 m-0'>{link.usdName}</p>
-                  <Link className='link-react text-body-secondary link-underline at-profile' href="#">{link.profilLink}</Link>
+                  <Link className='link-react text-body-secondary link-underline at-profile' href="#">{link.profilLink}
+                  </Link>
                 </div>
               </div>
             </>
@@ -89,7 +92,7 @@ return (
         </div>
         {/* POST SECTION */}
         <PostCard />
-          {/* END POST SECTION */}
+        {/* END POST SECTION */}
       </div>
       {/* END CENTER COLLUMN */}
 
@@ -109,7 +112,8 @@ return (
                 <Image src={link.imgURL} width={55} height={55} alt='profile picture' className='me-2' />
                 <div className='col'>
                   <p className='fw-semibold p-0 m-0'>{link.memberName}</p>
-                  <Link className='link-react at-profile text-body-secondary link-underline at-profile' href="#">{link.memberCount}</Link>
+                  <Link className='link-react at-profile text-body-secondary link-underline at-profile' href="#">
+                  {link.memberCount}</Link>
                 </div>
                 <span className='ms-3'><i className="text-grey fs-5 bi bi-globe-americas"></i></span>
               </div>
@@ -137,6 +141,13 @@ return (
         {/* END BADGES */}
       </div>
       {/* END RIGHT SIDE COLLUMN */}
+      <div className='toast-container position-fixed bottom-0 end-0 p-3'>
+        <div id='liveToast' className='toast' role="alert" aria-live="assertive" aria-atomic="true">
+          <div className='toast-body'>
+            <p><span>Blizzard</span> is offline.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
