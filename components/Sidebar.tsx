@@ -23,7 +23,7 @@ const Sidebar = () => {
         <li className='nav-item'>
           <Link 
             href="#"
-            className='nav-link py-3 m-1 rounded-0'
+            className='nav-link py-3 m-1 rounded-0 icon-zoom'
             aria-current="page"
             data-bs-toggle="tooltip"
             data-bs-placement="right"
@@ -36,7 +36,7 @@ const Sidebar = () => {
         <li className='nav-item'>
           <Link 
             href="#"
-            className='nav-link py-3 hover-side  rounded-0'
+            className='nav-link py-3 hover-side  rounded-0 icon-zoom'
             aria-current="page"
             data-bs-toggle="tooltip"
             data-bs-placement="right"
@@ -49,7 +49,7 @@ const Sidebar = () => {
         <li className='nav-item'>
           <Link 
             href="#"
-            className='nav-link py-3 rounded-0'
+            className='nav-link py-3 rounded-0 icon-zoom'
             aria-current="page"
             data-bs-toggle="tooltip"
             data-bs-placement="right"
@@ -62,7 +62,7 @@ const Sidebar = () => {
         <li className='nav-item'>
           <Link 
             href="#"
-            className='nav-link py-3 rounded-0'
+            className='nav-link py-3 rounded-0 icon-zoom'
             aria-current="page"
             data-bs-toggle="tooltip"
             data-bs-placement="right"
@@ -75,7 +75,7 @@ const Sidebar = () => {
         <li className='nav-item'>
           <Link 
             href="#"
-            className='nav-link py-3 rounded-0'
+            className='nav-link py-3 rounded-0 icon-zoom'
             aria-current="page"
             data-bs-toggle="tooltip"
             data-bs-placement="right"
@@ -88,7 +88,7 @@ const Sidebar = () => {
         <li className='nav-item'>
           <Link 
             href="#"
-            className='nav-link py-3 rounded-0'
+            className='nav-link py-3 rounded-0 icon-zoom'
             aria-current="page"
             data-bs-toggle="tooltip"
             data-bs-placement="right"
@@ -101,7 +101,7 @@ const Sidebar = () => {
         <li className='nav-item'>
           <Link 
             href="#"
-            className='nav-link py-3 rounded-0'
+            className='nav-link py-3 rounded-0 icon-zoom'
             aria-current="page"
             data-bs-toggle="tooltip"
             data-bs-placement="right"
@@ -114,7 +114,7 @@ const Sidebar = () => {
         <li className='nav-item'>
           <Link 
             href="#"
-            className='nav-link py-3 rounded-0'
+            className='nav-link py-3 rounded-0 icon-zoom'
             aria-current="page"
             data-bs-toggle="tooltip"
             data-bs-placement="right"
@@ -127,7 +127,7 @@ const Sidebar = () => {
         <li className='nav-item'>
           <Link 
             href="#"
-            className='nav-link py-3 rounded-0'
+            className='nav-link py-3 rounded-0 icon-zoom'
             aria-current="page"
             data-bs-toggle="tooltip"
             data-bs-placement="right"
@@ -140,7 +140,7 @@ const Sidebar = () => {
         <li className='nav-item'>
           <Link 
             href="#"
-            className='nav-link py-3 rounded-0'
+            className='nav-link py-3 rounded-0 icon-zoom'
             aria-current="page"
             data-bs-toggle="tooltip"
             data-bs-placement="right"

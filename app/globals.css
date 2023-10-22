@@ -124,7 +124,7 @@ a {
 }
 
 .hover-side:hover i {
-  color: rgb(93, 93, 245);
+  color: white;
   text-shadow: 1.rem;
 }
 
@@ -132,6 +132,16 @@ a {
   background-image: url('/emoji-bg-webp');
   background-repeat: repeat-x;
 
+}
+
+.icon-zoom { 
+  transition: transform 1s ease-in-out;
+  transition-duration: 1.5s;
+}
+
+.icon-zoom:hover {
+  transform: scale(1.5);
+  transition-duration: 1.5s;
 }
 
 /* ---------------- Profile Picture ----------------- */
