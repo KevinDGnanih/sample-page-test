@@ -77,17 +77,34 @@ return (
       <div className='col-lg-6 col-md-8'>
         <div className='mb-4 rounded-4 pt-2 shadow-sm bg-white'>
           <div className='d-flex justify-content-between'>
-            <p className='border-title fw-bolder pt-3 ms-5 mb-0'>All Updates</p>
-            <div className='form-group border rounded'>
-
-              <label htmlFor='select01' className='border border-top d-flex align-items-center mb-0'>Show</label>
-              <select id='select01' className='form-select  border-white'>
-                <option>Everything</option>
-                <option>Newest Posts</option>
-                <option>Oldest posts</option>
-              </select>
-
+            <p className='border-title fw-bolder mt-3 pt-3 ms-5 mb-0'>All Updates</p>
+            <div>
+              <div className='ms-4 p-1 label'>Show</div>
+              <div className='p-3 dropdown border-0'>
+                <Link href="#" className='nav-link dropdown-toggle border p-3 col-12 me-0' role='button' id='drop-03'
+                  data-bs-toggle="dropdown">
+                Everything<span className='text-white justify-content-end'>dddddd</span>
+                </Link>
+                <ul className='dropdown-menu rounded-sm' aria-labelledby='drop-03'>
+                  <li className='dropdown-item'>
+                    <Link href="#" className='link-react'>
+                    Freature 01
+                    </Link>
+                  </li>
+                  <li className='dropdown-item'>
+                    <Link href="#" className='link-react'>
+                    Freature 02
+                    </Link>
+                  </li>
+                  <li className='dropdown-item'>
+                    <Link href="#" className='link-react'>
+                    Freature 03
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
+
           </div>
         </div>
         {/* POST SECTION */}
@@ -141,6 +158,15 @@ return (
         {/* END BADGES */}
       </div>
       {/* END RIGHT SIDE COLLUMN */}
+      {/* LOADING SECTION */}
+      <div>
+        <div className='mt-5 spinner justify-content-center'>
+          <div className='bounce1'></div>
+          <div className='bounce2'></div>
+          <div className='bounce3'></div>
+        </div>
+      </div>
+      {/* END LOADING SECTION */}
     </div>
   </div>
 </div>
