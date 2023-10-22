@@ -21,10 +21,13 @@ return (
 <div className="main-section">
   <div className='container-fluid'>
     {/* HERO */}
-    <div className='col-12'>
-      <div className='bg-white rounded-4 shadow-sm'>
+    <div className='col-12 mt-5 bg-banner rounded-4'>
+      <div className='banner gradient-bg rounded-4 align-items-center'>
         <div className=''>
-
+          <div className='p-5 ms-5 align-items-center'>
+            <h1 className='text-white'>Newsfeed</h1>
+            <p className='text-white'>Check what your friends have been up to!</p>
+          </div>
         </div>
       </div>
     </div>

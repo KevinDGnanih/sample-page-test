@@ -131,8 +131,7 @@ a {
 }
 
 .banner {
-  background-image: url('/emoji-bg-webp');
-  background-repeat: repeat-x;
+height: 12rem;
 
 }
 
@@ -159,6 +158,16 @@ a {
   color: #b9b9b9;
 }
 
+.bg-banner {
+  background-image: url("/emoji-bg.webp");
+  background-repeat: repeat-x;
+  background-size: cover;
+}
+
+.gradient-bg {
+  background: linear-gradient(to right, rgb(86, 107, 246), rgba(0, 237, 254, 0.863));
+  opacity: 1;
+}
 /* =============== ANIMATION LOADER =============== */
 
 
