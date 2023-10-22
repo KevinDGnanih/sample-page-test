@@ -4,7 +4,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <footer>
-      <div className='d-flex p-3 flex-column flex-sm-row justify-content-between py-4 my-4 border-top'>
+      <div className='d-flex p-3 flex-column flex-sm-row justify-content-between py-4 my-4 border-top z-index-3'>
         <p>© 2023 Sample Page. All rights reserved.</p>
         <ul className='list-unstyled d-flex'>
             <li className='ms-3'>

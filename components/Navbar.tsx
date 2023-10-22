@@ -35,17 +35,17 @@ return (
                     </Link>
                     <ul className='dropdown-menu' aria-labelledby='drop-01'>
                         <li className='dropdown-item'>
-                            <Link href="#" className='dropdown-item'>
+                            <Link href="#" className='link-react'>
                             Freature 01
                             </Link>
                         </li>
                         <li className='dropdown-item'>
-                            <Link href="#">
+                            <Link href="#" className='link-react'>
                             Freature 02
                             </Link>
                         </li>
                         <li className='dropdown-item'>
-                            <Link href="#">
+                            <Link href="#" className='link-react'>
                             Freature 03
                             </Link>
                         </li>
@@ -57,17 +57,17 @@ return (
                     </Link>
                     <ul className='dropdown-menu'>
                         <li className='dropdown-item'>
-                            <Link href="#">
+                            <Link href="#" className='link-react'>
                             More 01
                             </Link>
                         </li>
                         <li className='dropdown-item'>
-                            <Link href="#">
+                            <Link href="#" className='link-react'>
                             More 02
                             </Link>
                         </li>
                         <li className='dropdown-item'>
-                            <Link href="#">
+                            <Link href="#" className='link-react'>
                             More 03
                             </Link>
                         </li>
@@ -97,4 +97,4 @@ return (
 )
 }
 
-export default Navbar
+export default Navbar;

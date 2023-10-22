@@ -75,9 +75,9 @@ return (
 
       {/* CENTER COLLUMN */}
       <div className='col-lg-6 col-md-8'>
-        <div className='mb-4 rounded-4 shadow-sm bg-white'>
-          <div className='d-flex p-5 justify-content-between'>
-            <p className='border-title fw-bolder'>All Updates</p>
+        <div className='mb-4 rounded-4 pt-2 shadow-sm bg-white'>
+          <div className='d-flex justify-content-between'>
+            <p className='border-title fw-bolder pt-3 ms-5 mb-0'>All Updates</p>
             <div className='form-group border rounded'>
 
               <label htmlFor='select01' className='border border-top d-flex align-items-center mb-0'>Show</label>
