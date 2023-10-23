@@ -1,11 +1,12 @@
-import { OrganizationSwitcher, SignIn, SignInButton, SignOutButton, SignUp, SignedIn, SignedOut } from '@clerk/nextjs'
 import Link from 'next/link'
-import React from 'react'
+import React from 'react';
 
 
 
 
 const Navbar = () => {
+
+
 
 return (
 <nav className='navbar navbar-expand-lg main-purple' aria-label='Navbar'>
@@ -80,16 +81,7 @@ return (
                 <span className='input-group-text border-0'><i className='bi bi-search border-0'></i></span>
             </form>
             <div className='d-flex col-lg-3 justify-content-lg-end'>
-                <SignedIn>
-                    <SignOutButton>
-                        <button id='liveToastBtn' className='btn btn-lg btn-1 text-white fs-6'>Logout</button>
-                    </SignOutButton>
-                </SignedIn>
-                <SignedOut>
-                    <Link href="/sign-in">
-                    <button id='login' className='btn btn-lg btn-1 text-white fs-6'>Login</button>
-                    </Link>
-                </SignedOut>
+                <button id='liveToastBtn' className='btn btn-lg btn-1 text-white fs-6'>Login</button>
             </div>
         </div>
     </div>

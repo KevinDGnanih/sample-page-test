@@ -8,7 +8,6 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Sidebar from '@/components/Sidebar'
 import Footer from '@/components/Footer'
-import { ClerkProvider } from "@clerk/nextjs";
 import Bottombar from '@/components/Bottombar';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -24,27 +23,24 @@ children,
 children: React.ReactNode
 }) {
 return (
-<ClerkProvider>
-  <html lang="en">
+<html lang="en">
 
-  <head>
-    <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></Script>
-  </head>
+<head>
+  <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></Script>
+</head>
 
-  <body className='overflow-hidden'>
-    <Navbar />
-    <main className='d-flex bg-body-tertiary'>
-      <Sidebar />
-      <section>
-        {children}
-      </section>
-    </main>
-    <Bottombar />
-  </body>
+<body className='overflow-hidden'>
+  <Navbar />
+  <main className='d-flex bg-body-tertiary'>
+    <Sidebar />
+    <section>
+      {children}
+    </section>
+  </main>
+  <Bottombar />
+</body>
 
-  </html>
-
-</ClerkProvider>
+</html>
 
 )
 }

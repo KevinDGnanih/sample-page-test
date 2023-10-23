@@ -25,6 +25,11 @@ a {
   margin-left: 10rem;
 }
 
+.form-signin {
+  max-width: 330px;
+  padding: 1rem;
+}
+
 .main-purple {
   background-color: rgb(93, 93, 245);
 }
