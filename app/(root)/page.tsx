@@ -19,9 +19,9 @@ export default function Home() {
 return (
 
 <div className="main-section">
-  <div className='container-fluid'>
+  <div className='container-fluid jutsify-content-center'>
     {/* HERO */}
-    <div className='col-12 mt-5 bg-banner rounded-4'>
+    <div className='col-lg-12 col-md-10 d-none d-lg-block d-md-block mt-5 bg-banner rounded-4'>
       <div className='banner gradient-bg rounded-4 align-items-center'>
         <div className=''>
           <div className='p-5 ms-5 align-items-center'>
@@ -35,7 +35,7 @@ return (
     <div className='row justify-content-between mt-5'>
 
       {/* LEFT SIDE COLLUMN */}
-      <div className='col-lg-3 col-md-6'>
+      <div className='col-lg-3 col-md-6 d-none d-lg-block'>
         {/* NEWEST MEMBERS */}
         <div className='mb-4 rounded-4 shadow-sm bg-white'>
           <div className='p-2'>
@@ -77,7 +77,7 @@ return (
 
 
       {/* CENTER COLLUMN */}
-      <div className='col-lg-6 col-md-8'>
+      <div className='col-lg-6 col-md-10'>
         <div className='mb-4 rounded-4 pt-2 shadow-sm bg-white'>
           <div className='d-flex justify-content-between'>
             <p className='border-title fw-bolder mt-3 pt-3 ms-5 mb-0'>All Updates</p>
@@ -121,7 +121,7 @@ return (
 
 
       {/* RIGHT SIDE COLLUMN */}
-      <div className='col-lg-3 col-md-6 '>
+      <div className='col-lg-3 col-md-6 d-none d-lg-block'>
         {/* POPULAR GROUPS */}
         <div className='mb-4 fade-in rounded-4 shadow-sm bg-white'>
           <div className='p-2'>
@@ -162,7 +162,7 @@ return (
       </div>
       {/* END RIGHT SIDE COLLUMN */}
       {/* LOADING SECTION */}
-      <div>
+      <div className='mb-5'>
         <div className='mt-5 spinner justify-content-center'>
           <div className='bounce1'></div>
           <div className='bounce2'></div>

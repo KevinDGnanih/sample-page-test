@@ -9,6 +9,7 @@ import { Inter } from 'next/font/google'
 import Sidebar from '@/components/Sidebar'
 import Footer from '@/components/Footer'
 import { ClerkProvider } from "@clerk/nextjs";
+import Bottombar from '@/components/Bottombar';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -32,13 +33,13 @@ return (
 
   <body className='overflow-hidden'>
     <Navbar />
-    <main className='d-flex vh-100 bg-body-tertiary'>
+    <main className='d-flex bg-body-tertiary'>
       <Sidebar />
       <section>
         {children}
       </section>
     </main>
-    <Footer />
+    <Bottombar />
   </body>
 
   </html>
