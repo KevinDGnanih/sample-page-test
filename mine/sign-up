@@ -5,18 +5,19 @@ import { useEffect, useState } from 'react';
 import { getSession, signIn } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 
-const SignUp = () => {
-
+const signUpForm = () => {
     const router = useRouter();
 
     useEffect(() => {
         async function checkSession() {
             const session = await getSession();
             if (session) {
-                router.push('/');
+                router.push('/app/(root)/page.tsx');
             }
         }
-    })
+
+        checkSession();
+    }, [router]);
 
     const [formData, setFormData] = useState({
         email: '', // Use formData.email
@@ -24,25 +25,30 @@ const SignUp = () => {
         confirmPassword: '', // Use formData.confirmPassword
     });
 
+    const [error, setError] = useState();
+    const [success, setSuccess] = useState();
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (formData.password === formData.confirmPassword) {
             const response = await signIn('credentials', 
             { 
-                email: formData,
-                password: formData, 
+                email: formData.email,
+                password: formData.password,
+                redirect: false, // Prevent automatic redirect
             });
 
 
         if (!response.error) {
             // If sign-up is successful, navigate to the home page
-            router.push('/')
+            setSuccess('Sign-up successful')
+            router.push('/app/(root)/page.tsx')
         } else {
             // Handle signup error
-            console.error('Sign-up failed', response.error)
+            setError('Sign-up failed', response.error)
         }
     } else {
-        console.error('Password do not match');
+        setError('Password do not match');
     };
 
     };
@@ -52,14 +58,11 @@ const SignUp = () => {
             ...formData,
             [e.target.name]: e.target.value,
         });
-    }
-
-
-    
+    };
 
     return (
         <div className='form-signin w-100 m-auto border rounded-4 shadow text-center'>
-            <form onSubmit={handleSubmit}>
+            <form method='POST' onSubmit={handleSubmit}>
                 <i className="bi bi-fire h3 mb-2 text-black"></i>
                 <p className='fw-normal mb-3 h3'>
                     Please sign up
@@ -119,9 +122,22 @@ const SignUp = () => {
                 <button type='submit' className='btn w-100 py-2 btn-1 mb-3 text-white'>Sign Up</button>
                 <div className='text-danger'></div>
                 <p className='text-center'>Already registered? <Link className='text-danger' href='/sign-in' passHref>Login here!</Link></p>
+                {error && (
+                    <div className='text-danger'>
+                        {error}
+                    </div>
+                )}
+                {success && (
+                    <div className='text-success'>
+                        {success}
+                    </div>
+                )}
             </form>
+            <Link href='/'>
+            <button>home</button>
+            </Link>
         </div>
     );
 }
 
-export default SignUp;
+export default signUpForm;

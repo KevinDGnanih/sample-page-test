@@ -1,3 +1,5 @@
+"use client"
+
 import Image from 'next/image'
 import styles from './page.module.css'
 import Link from 'next/link'
@@ -45,7 +47,8 @@ return (
                 <Image src={link.imgURL} width={45} height={45} alt='profile picture' className='me-2' />
                 <div>
                   <p className='fw-semibold p-0 m-0'>{link.usdName}</p>
-                  <Link className='link-react text-body-secondary link-underline at-profile' href="#">{link.profilLink}
+                  <Link className='link-react text-body-secondary link-underline at-profile' href="#">
+                  {link.profilLink}
                   </Link>
                 </div>
               </div>
@@ -172,5 +175,4 @@ return (
     </div>
   </div>
 </div>
-)
-}
+)}
