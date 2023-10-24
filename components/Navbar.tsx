@@ -1,11 +1,16 @@
+"use client";
+
+import { getProviders, signIn, signOut, getSession, getCsrfToken } from 'next-auth/react';
 import Link from 'next/link'
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 
 
 
 const Navbar = () => {
 
+  
+const isUserLoggedIn = false;
 
 
 return (
@@ -81,7 +86,10 @@ return (
                 <span className='input-group-text border-0'><i className='bi bi-search border-0'></i></span>
             </form>
             <div className='d-flex col-lg-3 justify-content-lg-end'>
-                <button id='liveToastBtn' className='btn btn-lg btn-1 text-white fs-6'>Login</button>
+
+                <Link href="/">
+                    <button id='liveToastBtn' className='btn btn-lg btn-1 text-white fs-6'>Login</button>
+                </Link>
             </div>
         </div>
     </div>
