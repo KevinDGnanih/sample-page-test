@@ -4,7 +4,7 @@ import React from 'react'
 
 const SignIn = () => {
 return (
-<div className='form-signin w-100 m-auto border rounded-4 shadow'>
+<div className='form-signin w-100 m-auto border text-center rounded-4 shadow'>
     <form className=''>
             <i className="bi bi-fire fs-3 mb-2 text-black"></i>
             <p className='fw-normal mb-3 h3 text-center'>

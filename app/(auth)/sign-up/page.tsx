@@ -12,7 +12,7 @@ const signUpForm = () => {
         async function checkSession() {
             const session = await getSession();
             if (session) {
-                router.push('/app/(root)/page.tsx');
+                router.push('/');
             }
         }
 
@@ -41,8 +41,8 @@ const signUpForm = () => {
 
         if (!response.error) {
             // If sign-up is successful, navigate to the home page
-            setSuccess('Sign-up successful')
-            router.push('/app/(root)/page.tsx')
+            setSuccess('Sign-up successful', response.succes)
+            router.push('/')
         } else {
             // Handle signup error
             setError('Sign-up failed', response.error)
@@ -134,7 +134,7 @@ const signUpForm = () => {
                 )}
             </form>
             <Link href='/'>
-            <button>home</button>
+                <button>home</button>
             </Link>
         </div>
     );
