@@ -8,6 +8,7 @@ import { useRouter } from 'next/navigation';
 const signUpForm = () => {
     const router = useRouter();
 
+    // Check if the user is already authenticated and redirects to the home page if they are.
     useEffect(() => {
         async function checkSession() {
             const session = await getSession();
@@ -28,7 +29,7 @@ const signUpForm = () => {
     const [error, setError] = useState();
     const [success, setSuccess] = useState();
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e: any) => {
         e.preventDefault();
         if (formData.password === formData.confirmPassword) {
             const response = await signIn('credentials', 
@@ -37,23 +38,21 @@ const signUpForm = () => {
                 password: formData.password,
                 redirect: false, // Prevent automatic redirect
             });
-
-
-        if (!response.error) {
+            
+            if (!response.error) {
             // If sign-up is successful, navigate to the home page
-            setSuccess('Sign-up successful', response.succes)
+            setSuccess('Sign-up successful', response.success)
             router.push('/')
         } else {
             // Handle signup error
             setError('Sign-up failed', response.error)
         }
     } else {
-        setError('Password do not match');
+        setError('Passwords do not match');
+    };
     };
 
-    };
-
-    const handleChange = (e) => {
+    const handleChange = (e: any) => {
         setFormData({
             ...formData,
             [e.target.name]: e.target.value,
