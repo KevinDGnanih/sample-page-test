@@ -4,10 +4,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Navbar from '@/components/Navbar';
 import Script from 'next/script';
-import type { Metadata } from 'next'
+import type { Metadata } from 'next';
+import { ClerkProvider } from "@clerk/nextjs";
 import { Inter } from 'next/font/google'
 import Sidebar from '@/components/Sidebar'
-import Footer from '@/components/Footer'
 import Bottombar from '@/components/Bottombar';
 
 
@@ -24,7 +24,7 @@ children,
 children: React.ReactNode
 }) {
 return (
-
+<ClerkProvider>
   <html lang="en">
 
   <head>
@@ -43,5 +43,8 @@ return (
   </body>
 
   </html>
+
+</ClerkProvider>
+
 )
 }

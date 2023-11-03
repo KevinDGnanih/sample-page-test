@@ -2,6 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../globals.css";
+import { ClerkProvider } from "@clerk/nextjs";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,13 +18,17 @@ children: React.ReactNode;
 }) {
 return (
 
-<html lang='en'>
+<ClerkProvider>
+  <html lang='en'>
 
-<body className={`${inter.className} d-flex align-items-center py-4`}>
-  {children}
-</body>
+  <body className={`${inter.className} d-flex align-items-center py-4`}>
+    {children}
+  </body>
 
-</html>
+  </html>
+
+</ClerkProvider>
+
 
 );
 }

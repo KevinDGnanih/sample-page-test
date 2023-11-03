@@ -1,18 +1,25 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
-const {MONGODB_URI} = process.env
-if(!MONGODB_URI) {
-    throw new Error("Invalid environment variable: MONGODB_URI");
-}
+let isConnected = false; // Variable to track the connection status
 
-export const connectToMongoDB = async () => {
-    try {
-        const {connection} = await mongoose.connect(MONGODB_URI)
+export const connectToDB = async () => {
+  // Set strict query mode for Mongoose to prevent unknown field queries.
+  mongoose.set("strictQuery", true);
 
-        if(connection.readyState === 1) {
-            return Promise.resolve(true)
-        }
-    } catch (error) {
-        return Promise.reject(error)
-    }
-}
+  if (!process.env.MONGODB_URL) return console.log("Missing MongoDB URL");
+
+  // If the connection is already established, return without creating a new connection.
+  if (isConnected) {
+    console.log("MongoDB connection already established");
+    return;
+  }
+
+  try {
+    await mongoose.connect(process.env.MONGODB_URL);
+
+    isConnected = true; // Set the connection status to true
+    console.log("MongoDB connected");
+  } catch (error) {
+    console.log(error);
+  }
+};

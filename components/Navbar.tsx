@@ -1,6 +1,6 @@
 "use client";
 
-import { getProviders, signIn, signOut, getSession, getCsrfToken, useSession, SessionProvider } from 'next-auth/react';
+import { SignOutButton, SignedIn, SignedOut } from '@clerk/nextjs';
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react';
 
@@ -87,11 +87,17 @@ return (
                     <span className='input-group-text border-0'><i className='bi bi-search border-0'></i></span>
                 </form>
                 <div className='d-flex col-lg-3 justify-content-lg-end'>
-
-                    <Link href="/sign-up">
-                    <button id='liveToastBtn' className='btn btn-lg btn-1 text-white fs-6'>Login</button>
+                <SignedIn>
+                    <SignOutButton>
+                        <button id='liveToastBtn' className='btn btn-lg btn-1 text-white fs-6'>Logout</button>
+                    </SignOutButton>
+                </SignedIn>
+                <SignedOut>
+                    <Link href="/sign-in">
+                    <button id='login' className='btn btn-lg btn-1 text-white fs-6'>Login</button>
                     </Link>
-                </div>
+                </SignedOut>
+            </div>
             </div>
         </div>
     </nav>
