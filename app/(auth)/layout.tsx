@@ -18,17 +18,12 @@ children: React.ReactNode;
 }) {
 return (
 
-<ClerkProvider>
   <html lang='en'>
 
-  <body className={`${inter.className} d-flex align-items-center py-4`}>
+  <body className={`${inter.className} d-flex p-5 justify-content-center`}>
     {children}
   </body>
 
   </html>
-
-</ClerkProvider>
-
-
 );
 }
